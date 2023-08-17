@@ -1,0 +1,41 @@
+.row {
+  width: 100px;
+  height: 100px;
+  background-color: antiquewhite;
+  animation-name: square;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 3;
+  /* animation-fill-mode: forwards; */
+  animation-play-state: paused;
+  /* animation-direction: reverse; */
+}
+.row:hover {
+  /* transform: translatex(200px); */
+  /* animation-name: square;
+animation-duration: 2s; */
+  animation-play-state: running;
+}
+@keyframes square {
+  0% {
+    transform: translateY(100px);
+    background-color: yellow;
+  }
+  25% {
+    transform: translateY(900px);
+    background-color: rgb(162, 0, 255);
+  }
+  50% {
+    transform: translateY(600px);
+    background-color: rgb(7, 7, 7);
+  }
+  75% {
+    transform: translateY(200px);
+    background-color: rgb(0, 255, 85);
+  }
+  100% {
+    transform: translateY(700px);
+    background-color: rgb(255, 0, 0);
+  }
+}
