@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.left {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+}
+
+.right .bell-icon {
+  margin: 0 30px;
+}
+
+.right .search-bar {
+  margin-right: 20px;
+}
+.main .banner {
+  display: flex;
+}
+.main {
+  width: 70%;
+  margin-top: 35px;
+  margin-left: 15px;
+}
+.main .banner img {
+  border: 1px solid;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 45px;
+  width: 45px;
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+.favourite {
+  margin-left: 50px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #8f87c6;
+  padding: 5px 5px;
+}
+
+.search-bar input {
+  background-color: transparent;
+  border: none;
+}
+
+.search-bar input::placeholder {
+  color: white;
+}
+.main-queue-container {
+  display: flex;
+  background-color: aqua;
+}
+
+.main-queue-container .queue img {
+  width: 100px;
+}
+
+.main-queue-container .queue {
+  background-color: aquamarine;
+  width: 30%;
+}
+
+.queue-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.queue-filter {
+  display: flex;
+}
+
+.song-tab {
+  display: flex;
+  border: 1px solid;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.song-tab .song-left {
+  display: flex;
+  border: 1px dotted;
+  justify-content: space-between;
+  align-items: center;
+  background-color: burlywood;
+}
+.song-list .song-tab .song-left {
+  margin: 0 20px;
+}
+.song-list .song-tab .song-left img {
+  margin: 0 20px;
+  height: 50px;
+  width: 50px;
+}
+.song-list .song-tab {
+  /* height: 60px; */
+  background-color: blueviolet;
+  width: 100%;
+}
+.song-list .song-right i {
+  margin-right: 35px;
+}
