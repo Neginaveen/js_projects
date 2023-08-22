@@ -3,12 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.left-section .banner-container img:hover {
+  transform: scale(1.1);
+}
+.left-section .banner-container img {
+  margin: 5px 5px;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
   height: 70px;
   width: 100%;
   background-color: black;
+  border-bottom: 1px solid white;
 }
 .container .left-part {
   justify-content: center;
@@ -41,30 +50,47 @@
   width: 50px;
 }
 
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #93b6e2;
+  padding: 5px;
+}
+
+.search-bar input {
+  background-color: transparent;
+  border: none;
+}
+
+.search-bar .magnifine-icon {
+  margin-left: 5px;
+}
+
+.search-bar input::placeholder {
+  color: white;
+  margin-left: 10px;
+  opacity: 1;
+}
+
 .right-part i {
   color: white;
 }
 .container .right-part .input-box input {
-  background-color: aqua;
   padding: 5px 0;
 }
 .container .right-part .bell-icon {
   margin-right: 50px;
   margin-left: 50px;
 }
-/* .container .right-part .profile-icon {
-margin-right: 10px;
-} */
 
 .main-section {
   display: flex;
+  background-color: black;
 }
 .main-section .left-section {
   width: 70%;
   height: 40%;
-  /* display: flex; */
   margin: 10px 15px;
-  /* justify-content: space-evenly; */
 }
 
 .main-section .left-section .banner-container {
@@ -72,11 +98,15 @@ margin-right: 10px;
 }
 
 .main-section .right-section {
-  height: 100vh;
+  height: 100%vh;
   width: 100%;
   padding: 10px 10px;
   border-left: 1px solid white;
-  background-color: rgb(111, 111, 245);
+  background-color: black;
+  color: aliceblue;
+}
+.main-section .right-section .songlist i:hover {
+  cursor: pointer;
 }
 
 .main-section .right-section .songlist img {
@@ -108,23 +138,118 @@ margin-right: 10px;
 }
 .songlist {
   margin-top: 20px;
-  /* background-color: aqua; */
 }
 
 .songlist .song-tab {
   align-items: center;
   margin: 10px 0;
 }
-.latest-release {
-  background-color: brown;
-  height: 100%;
-  width: 69%;
-}
+
 .latest-release img {
   width: 80px;
   height: 80px;
 }
-.latest-release {
+.latest-songs-list .latest-song {
   display: flex;
   align-items: center;
+  border: 1px solid;
+  color: aliceblue;
+  background-color: black;
+}
+
+.latest-release .latest-head {
+  margin: 20px 0;
+  color: aliceblue;
+}
+
+.latest-release .song-details {
+  margin-left: 10px;
+}
+
+.latest-songs-list .song-row {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+.latest-songs-list .song-row .latest-song{
+width: 40%;
+  justify-content: space-between;
+}
+.song-container{
+  display: flex;
+  align-items: center;
+}
+
+.popular-artists img {
+  border-radius: 50%;
+  height: 110px;
+  width: 110px;
+}
+.popular-artists {
+  justify-content: space-evenly;
+  border: 1px solid;
+  background-color: black;
+  color: aliceblue;
+}
+
+.artist-list {
+  display: flex;
+  overflow: scroll;
+}
+
+.artist-list::-webkit-scrollbar {
+  display: none;
+}
+.artist-head {
+  margin: 20px 0;
+}
+.artist-tag {
+  margin: 0 10px;
+}
+
+.artist-name {
+  text-align: center;
+}
+.song-type img {
+  border-radius: 50%;
+  margin: 10px 5px;
+}
+.song-type {
+  display: flex;
+  border: 1px solid;
+  justify-content: space-evenly;
+  overflow: scroll;
+  background-color: black;
+}
+.song-type::-webkit-scrollbar {
+  display: none;
+}
+.english-songs-logo img {
+  display: flex;
+  margin: 10px 5px;
+}
+.english-songs-logo {
+  display: flex;
+  overflow: scroll;
+}
+.english-songs {
+  border: 1px solid;
+  background-color: black;
+  color: aliceblue;
+}
+.english-songs-logo::-webkit-scrollbar {
+  display: none;
+}
+.english-song-list {
+  display: flex;
+  margin: 0 10px;
+  overflow: scroll;
+}
+.english-song-list::-webkit-scrollbar {
+  display: none;
+}
+.english-song-list img {
+  margin: 10px 10px;
 }
