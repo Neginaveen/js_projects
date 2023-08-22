@@ -107,14 +107,16 @@
 
 .song-tab .song-left {
   display: flex;
-  border: 1px dotted;
+  /* border: 1px dotted; */
   justify-content: space-between;
   align-items: center;
-  background-color: burlywood;
+  /* background-color: burlywood; */
 }
+
 .song-list .song-tab .song-left {
-  margin: 0 20px;
+  margin:0 20px;
 }
+
 .song-list .song-tab .song-left img {
   margin: 0 20px;
   height: 50px;
@@ -122,7 +124,7 @@
 }
 .song-list .song-tab {
   /* height: 60px; */
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   width: 100%;
 }
 .song-list .song-right i {
