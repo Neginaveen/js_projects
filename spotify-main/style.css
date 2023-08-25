@@ -9,7 +9,7 @@
 /* ---------------upper-sidebar------- */
 .left-part {
   width: 30%;
-  height: 110px;
+  /* height: 100vh; */
   border-radius: 10px;
   margin: 5px 5px;
   background: black;
@@ -57,7 +57,10 @@
 .scrollbar .tab {
   border-radius: 20px;
   background-color: rgba(192, 158, 249, 0.739);
-  padding: 4px;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 5px;
   overflow: hidden;
 }
@@ -109,11 +112,12 @@
 .right-part {
   background-color: black;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   border-radius: 10px;
   margin-top: 5px;
   padding: 5px 5px;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .right-part .arrow-button {
@@ -165,17 +169,41 @@
 .song-details .song-image img {
   height: 80px;
   width: 80px;
-  /* margin: 20px 0px; */
-  /* margin-left: 20px; */
 }
 
 .song-details .Artist-name {
   margin-left: 20px;
-  /* padding: 30px; */
-  /* padding-right: 80px; */
 }
 .most-listened-container .most-listened-list .song-row {
   display: flex;
   justify-content: space-between;
   margin: 15px 0;
+}
+
+/* ---------------banner---------section */
+.banner-part .banner-head {
+  display: flex;
+  justify-content: space-between;
+}
+.banner-part .banner-imagepart img {
+  width: 150px;
+  height: 150px;
+}
+.banner-imagepart {
+  background-color: grey;
+  padding: 15px 10px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  width: 17%;
+  margin: 20px 20px;
+}
+
+.banner-part .image-details .song-name {
+  margin-top: 15px;
+}
+.banner-part .image-details .singer-name {
+  margin-top: 5px;
+}
+.banner-part .banner-tab {
+  display: flex;
 }
