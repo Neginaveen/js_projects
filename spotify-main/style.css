@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+
+/* ---------------upper-sidebar------- */
+.left-part {
+  width: 30%;
+  height: 110px;
+  border-radius: 10px;
+  margin: 5px 5px;
+  background: black;
+}
+.home-icon,
+.glass-icon {
+  display: flex;
+  padding: 15px 25px;
+}
+.home-icon i,
+.glass-icon i {
+  font-size: 20px;
+  cursor: pointer;
+}
+.home-icon .home,
+.glass-icon .search {
+  padding: 0 15px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+/* ---------------lower-sidebar----------- */
+.lower-sidebar {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.library {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+.head {
+  display: flex;
+}
+.head .library-icon {
+  margin-right: 8px;
+}
+.scrollbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.scrollbar .tab {
+  border-radius: 20px;
+  background-color: rgba(192, 158, 249, 0.739);
+  padding: 4px;
+  margin: 0 5px;
+  overflow: hidden;
+}
+.recent-container .search-recent {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px;
+}
+.recent {
+  display: flex;
+}
+.recent-container .song-image img {
+  height: 50px;
+  width: 50px;
+  border-radius: 8px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.recent-song {
+  display: flex;
+  margin: 10px 0;
+}
+.meta-info {
+  display: flex;
+}
+.recent-name {
+  margin-bottom: 10px;
+}
+.recent-container {
+  overflow-y: scroll;
+}
+.recent-container::-webkit-scrollbar {
+  display: none;
+}
+
+.recent-container .search-recent {
+  font-size: 20px;
+}
+.recent .recents {
+  padding-right: 4px;
+}
+
+/* ---------------------right--part----------  */
+
+.container {
+  display: flex;
+}
+
+.right-part {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  border-radius: 10px;
+  margin-top: 5px;
+  padding: 5px 5px;
+  justify-content: space-between;
+}
+
+.right-part .arrow-button {
+  display: flex;
+}
+
+.right-part .profile-part {
+  display: flex;
+}
+.right-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 20px;
+}
+.right-part .profile-part .install-app {
+  margin-right: 15px;
+  border-radius: 15px;
+  background-color: rgb(255, 38, 0);
+  padding: 10px 8px;
+}
+.right-part .profile-part .profile-icon {
+  border-radius: 50%;
+  background-color: rgb(255, 38, 0);
+  align-items: center;
+  font-size: 18px;
+  margin-top: 8px;
+  padding: 10px;
+}
+.arrow-button .left-arrow,
+.arrow-button .right-arrow {
+  font-size: 30px;
+  margin: 0 4px;
+  background: grey;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+.most-listened-container .song-details {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background-color: grey;
+  width: 30%;
+}
+
+.most-listened-container .most-listened-list {
+  margin: 10px 0;
+  margin-left: 20px;
+}
+.song-details .song-image img {
+  height: 80px;
+  width: 80px;
+  /* margin: 20px 0px; */
+  /* margin-left: 20px; */
+}
+
+.song-details .Artist-name {
+  margin-left: 20px;
+  /* padding: 30px; */
+  /* padding-right: 80px; */
+}
+.most-listened-container .most-listened-list .song-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
