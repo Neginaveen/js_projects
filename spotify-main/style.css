@@ -120,10 +120,6 @@
   overflow: hidden;
 }
 
-.right-part .arrow-button {
-  display: flex;
-}
-
 .right-part .profile-part {
   display: flex;
 }
@@ -134,9 +130,13 @@
 }
 .right-part .profile-part .install-app {
   margin-right: 15px;
-  border-radius: 15px;
+  border-radius: 30px;
   background-color: rgb(255, 38, 0);
-  padding: 10px 8px;
+  padding: 0 5px;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .right-part .profile-part .profile-icon {
   border-radius: 50%;
@@ -146,14 +146,22 @@
   margin-top: 8px;
   padding: 10px;
 }
+.arrow-button {
+  display: flex;
+}
 .arrow-button .left-arrow,
 .arrow-button .right-arrow {
-  font-size: 30px;
-  margin: 0 4px;
-  background: grey;
+  font-size: 20px;
   border-radius: 50%;
-  padding: 5px 10px;
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
 }
+
 .most-listened-container .song-details {
   display: flex;
   align-items: center;
